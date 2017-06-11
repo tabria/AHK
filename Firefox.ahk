@@ -3,9 +3,6 @@
 ;========================================================================================
 	#NoEnv
 		
-	#Include Z:\SPODELEN\UCB\lib\Acc.ahk
-	#Include Z:\SPODELEN\UCB\lib\BrowserBase.ahk
-	#Include Z:\SPODELEN\UCB\lib\vlibrary.ahk
 	#KeyHistory 0
 	#MaxThreads 225
 	#MaxMem 256
@@ -19,7 +16,7 @@
 	
 	Class FireFox extends BrowserBase {
 			checksArray		:= [".yandex","images/search?","video/search?","yandex","ya.ru"]
-			urlAttrib		:= {" ":"","https://":"bqdyiy","http://":"bqdyiy","www.":"bqdyiy","`r":"bqdyiy", "`n":"bqdyiy", "«ð://":"bqdyiy"}
+			urlAttrib		:= {" ":"","https://":"bqdyiy","http://":"bqdyiy","www.":"bqdyiy","`r":"bqdyiy", "`n":"bqdyiy", "Â«Ã°://":"bqdyiy"}
 			objectsRegion	:=[]
 			childPath		:=[]
 			
@@ -136,7 +133,7 @@
 						}
 					}
 					
-					if (nameTab="Connecting…") {
+					if (nameTab="Connectingâ€¦") {
 						Loop {
 							n:=n+1
 							if (n>7) {
